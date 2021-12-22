@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a scatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="heading">Etch-a-Sketch</h1>
+
+    <div class="controls">
+
+
+        <input type="color" id="colorPicker" value="#333333">
+        <button class="btn" id="colorMode">Color mode</button>
+        <button class="btn" id="rainbowMode">Rainbow mode</button>
+        <button class="btn" id="eraser">Eraser</button>
+        <button class="btn" id="clear">Clear</button>
+        <input type="range" min="1" max="60" value="16" class="slider">
+        <div id="output"> <span id="value"></span></div>
+        </div>
+
+
+
+    </div>
+
+    <div class="container"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

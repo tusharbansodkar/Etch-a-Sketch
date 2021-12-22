@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+body{
+    background: whitesmoke;
+    height: 700px;
+}
+
+/* grid container styling */
+.container{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    outline: 2px solid black;
+    background: white;
+    overflow: hidden;
+    position: relative;
+    top: 40px;
+    left: 30%;
+}
+
+/* row styling */
+.row{
+    display: flex;
+}
+
+/* cell styling */
+.cell{
+    border: 1px solid rgb(141, 141, 141);
+}
+
+
+
+/* heading styling */
+.heading{
+    font-family: 'Ubuntu', sans-serif;
+    width: fit-content;
+    color: black;
+    font-size: 50px;
+    letter-spacing: 3px;
+    position: relative;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* controls styling */
+.controls{
+    width: 250px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    left: 20%;
+    vertical-align: top; 
+    text-align: center;
+}
+
+
+/* color picker styling */
+input[type="color"]{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin: auto;
+   border: 1px solid white;
+   margin-top: 30px;
+}
+
+input[type=color]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+  }
+  
+  input[type=color]::-webkit-color-swatch-wrapper {
+      border: none;
+      border-radius: 50%;
+      padding: 0;
+  }
+
+
+/* styling buttons */
+ .btn{
+     display: block;
+     margin: auto;
+     margin-top: 30px;
+     width: 200px;
+     padding: 5px 5px;
+     background: none;
+     border: 1px solid rgb(0, 0, 0);
+     border-radius: 10px;
+     color: rgb(0, 0, 0);
+     cursor: pointer;
+     transition: all .2s ease;
+ }
+
+ .btn:hover{
+     transform: scale(1.1);
+ }
+
+ /* adding this class when button is active */
+ .active{
+     background: gray;
+     color: white;
+     border: none;
+ }
+
+ 
+/* slider styling */
+ .slider{
+    -webkit-appearance: none;
+    appearance: none;
+     margin-top: 30px;
+     width: 200px;
+     height: 5px;
+     border-radius: 10px;
+     background-color: rgb(80, 79, 79);
+     outline: none;
+     cursor: pointer;
+     
+ }
+
+
+ .slider::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     appearance: none;
+     height: 20px;
+     width: 20px;
+     background: rgb(80, 79, 79);
+     border-radius: 50%;
+     position: relative;
+ }
+
+ 
+/* styling for slider value */
+ #output {
+     margin-top: 10px;
+     
+    }
+    
